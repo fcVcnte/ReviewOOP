@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReviewOOP.SharedContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReviewOOP.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Entity
     {
         public CareerItem(int order, string title, string description, Course course)
         {

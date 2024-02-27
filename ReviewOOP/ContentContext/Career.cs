@@ -1,8 +1,6 @@
-﻿using ReviewOOP.SharedContext;
-
-namespace ReviewOOP.ContentContext
+﻿namespace ReviewOOP.ContentContext
 {
-    public class Career : Entity
+    public class Career : Content
     {
         public ICollection<CareerItem> Items { get; set; }
         public int TotalCourses => Items.Count;

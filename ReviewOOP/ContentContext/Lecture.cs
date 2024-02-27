@@ -1,6 +1,8 @@
-﻿namespace ReviewOOP.ContentContext
+﻿using ReviewOOP.SharedContext;
+
+namespace ReviewOOP.ContentContext
 {
-    public class Lecture
+    public class Lecture : Entity
     {
         public int Order { get; set; }
         public string Title { get; set; } = string.Empty;

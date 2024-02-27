@@ -1,9 +1,8 @@
 ﻿using ReviewOOP.ContentContext.Enums;
-using ReviewOOP.SharedContext;
 
 namespace ReviewOOP.ContentContext
 {
-    public class Course : Entity
+    public class Course : Content
     {
         public string Tag { get; set; } = string.Empty;
         public ICollection<Module> Modules { get; set; }

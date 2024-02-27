@@ -1,16 +1,18 @@
-﻿namespace ReviewOOP.SharedContext
+﻿using ReviewOOP.NotificationContext;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ReviewOOP.SharedContext
 {
-    public abstract class Entity
+    public class Entity : Notifiable
     {
         public Guid Id { get; set; }
-        public string Title { get; set; } = string.Empty;
-        public string Url { get; set; } = string.Empty;
-
-        public Entity(string title, string url)
+        public Entity()
         {
             Id = Guid.NewGuid();
-            Title = title;
-            Url = url;
         }
     }
 }

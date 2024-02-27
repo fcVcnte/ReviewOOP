@@ -1,8 +1,6 @@
-﻿using ReviewOOP.SharedContext;
-
-namespace ReviewOOP.ContentContext
+﻿namespace ReviewOOP.ContentContext
 {
-    public class Article : Entity
+    public class Article : Content
     {
         public Article(string title, string url)
             : base(title, url)
